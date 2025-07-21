@@ -290,7 +290,7 @@ ol {
 	text-align: left;
 	position: relative;
 	width: 100%;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 700;
 	color: #414141;
 	padding: 0;
@@ -431,7 +431,7 @@ ol {
 
 .main-menu li a {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 22px;
 	color: #ffffff;
 	margin-right: 50px;
 	line-height: 1;
@@ -1227,7 +1227,7 @@ ol {
 
 .site-pagination a {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 18px;
 	color: #414141;
 }
 
@@ -1508,7 +1508,7 @@ ol {
 }
 
 .back-link a {
-	font-size: 12px;
+	font-size: 15px;
 	color: #414141;
 }
 
@@ -1590,7 +1590,7 @@ ol {
 
 .product-details .p-review a {
 	color: #414141;
-	font-size: 14px;
+	font-size: 15px;
 	margin-right: 12px;
 	margin-left: 12px;
 }
