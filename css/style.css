@@ -50,17 +50,17 @@ h5 {
 }
 
 h6 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 p {
-	font-size: 18px;
+	font-size: 14px;
 	color: #585858;
 	line-height: 1.6;
 }
 
 img {
-	max-width: 120%;
+	max-width: 100%;
 }
 
 input:focus,
@@ -355,7 +355,7 @@ ol {
 .header-search-form input {
 	width: 100%;
 	height: 44px;
-	font-size: 12px;
+	font-size: 14px;
 	border-radius: 50px;
 	border: none;
 	padding: 0 15px;
@@ -376,20 +376,20 @@ ol {
 
 .user-panel .up-item {
 	display: inline-block;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .user-panel .up-item i {
-	font-size: 24px;
+	font-size: 22px;
 }
 
 .user-panel .up-item a {
-	font-size: 18px;
+	font-size: 14px;
 	color: #000;
 }
 
 .user-panel .up-item:first-child {
-	margin-right: 14px;
+	margin-right: 29px;
 }
 
 .shopping-card {
@@ -431,7 +431,7 @@ ol {
 
 .main-menu li a {
 	display: inline-block;
-	font-size: 30px;
+	font-size: 16px;
 	color: #ffffff;
 	margin-right: 50px;
 	line-height: 1;
@@ -442,7 +442,7 @@ ol {
 .main-menu li a .new {
 	position: absolute;
 	top: -8px;
-	font-size: 18px;
+	font-size: 10px;
 	font-weight: 700;
 	color: #fff;
 	background: #f51167;
@@ -451,7 +451,7 @@ ol {
 	left: calc(50% - 21px);
 	padding: 5px 1px 1px;
 	border-radius: 15px;
-	width: 52px;
+	width: 42px;
 }
 
 .main-menu li:hover .sub-menu {
@@ -538,8 +538,8 @@ ol {
 }
 
 .hero-slider .hs-item p {
-	font-size: 24px;
-	font-weight: 600;
+	font-size: 18px;
+	font-weight: 300;
 	margin-bottom: 35px;
 	position: relative;
 	top: 100px;
@@ -1055,7 +1055,7 @@ ol {
 	display: inline-block;
 	position: relative;
 	padding-left: 20px;
-	font-size: 15px;
+	font-size: 14px;
 	color: #bcbcbc;
 	margin-bottom: 6px;
 }
