@@ -2189,19 +2189,19 @@ ol {
   Responsive
 ---------------------*/
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 	.container {
-		max-width: 1700px;
+		max-width: 1175px;
 	}
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1350px) {
 	.product-slider .owl-nav {
 		position: relative;
 		left: 0;
 		top: 0;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 	.product-slider .owl-nav button.owl-prev,
 	.product-slider .owl-nav button.owl-next {
