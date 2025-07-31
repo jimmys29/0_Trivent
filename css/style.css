@@ -2425,3 +2425,12 @@ ol {
 		display: none;
 	}
 }
+/* Para incluir el iphone12 */
+@media only screen and (max-width: 420px) {
+	.container {
+		padding: 0 15px;
+	}
+	.hero-slider .hs-item h2 {
+		font-size: 32px;
+	}
+}
