@@ -2189,16 +2189,12 @@ ol {
   Responsive
 ---------------------*/
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
 	.container {
 		max-width: 1175px;
 	}
-} */
-@media (min-width: 992px) {
-	.container {
-		max-width: 768px;
-	}
 }
+
 
 @media (max-width: 1350px) {
 	.product-slider .owl-nav {
