@@ -2194,9 +2194,9 @@ ol {
 		max-width: 1175px;
 	}
 } */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	.container {
-		max-width: 768px;
+		max-width: 576px;
 	}
 }
 
