@@ -1422,12 +1422,12 @@ ol {
 	background: #d7d7d7;
 }
 
-.fw-color-choose label.cs-orange {
-	background: #6f91ff;
+.fw-color-choose label.cs-black {
+	background: #000000;
 }
 
 .fw-color-choose label.cs-yollow {
-	background: #6f91ff;
+	background: #5a65fd;
 }
 
 .fw-color-choose label.cs-green {
@@ -1435,11 +1435,11 @@ ol {
 }
 
 .fw-color-choose label.cs-purple {
-	background: #bc83b1;
+	background: #f716ff;
 }
 
-.fw-color-choose label.cs-blue {
-	background: #9ee7f4;
+.fw-color-choose label.cs-neon {
+	background: #26ff00;
 }
 
 .fw-color-choose label span {
@@ -1823,7 +1823,7 @@ ol {
 }
 
 .cart-table .quantity .pro-qty {
-	width: 80px;
+	width: 90px;
 	background: #fff;
 	border-color: #fff;
 }
@@ -1945,7 +1945,7 @@ ol {
 
 .address-rb {
 	text-align: right;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 
 .address-rb .cfr-item {
