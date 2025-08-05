@@ -1,6 +1,6 @@
 /* =================================
 ------------------------------------
-  Divisima | eCommerce Template
+  Trivent | eCommerce Template
   Version: 1.0
  ------------------------------------
  ====================================*/
@@ -1418,16 +1418,21 @@ ol {
 	cursor: pointer;
 }
 
+.fw-color-choose label.cs-all {
+	background: #e5ff00d8;
+}
 .fw-color-choose label.cs-gray {
 	background: #d7d7d7;
 }
-
+.fw-color-choose label.cs-rosa {
+	background: #e6b5b5;
+}
 .fw-color-choose label.cs-black {
 	background: #000000;
 }
 
-.fw-color-choose label.cs-yollow {
-	background: #5a65fd;
+.fw-color-choose label.cs-blue {
+	background: #0516fa;
 }
 
 .fw-color-choose label.cs-green {

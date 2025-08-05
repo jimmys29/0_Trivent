@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
-	<title>Category</title>
+	<title>Mujer</title>
 	<meta charset="UTF-8">
-	<meta name="description" content=" Divisima | eCommerce Template">
-	<meta name="keywords" content="divisima, eCommerce, creative, html">
+	<meta name="description" content=" Trivent | eCommerce Template">
+	<meta name="keywords" content="Trivent, eCommerce, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="img/favicon.png" rel="shortcut icon"/>
+	<link href="img/favicon.png" rel="shortcut icon" />
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/flaticon.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
-	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/flaticon.css" />
+	<link rel="stylesheet" href="css/slicknav.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
 
 	<!--[if lt IE 9]>
@@ -30,6 +32,7 @@
 	<![endif]-->
 
 </head>
+
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -44,7 +47,7 @@
 					<div class="col-lg-2 text-center text-lg-left">
 						<!-- logo -->
 						<a href="./index.html" class="site-logo">
-							<img src="img/logo.png"  alt="">
+							<img src="img/logo.png" alt="">
 						</a>
 					</div>
 					<div class="col-xl-6 col-lg-5">
@@ -57,7 +60,8 @@
 						<div class="user-panel">
 							<div class="up-item">
 								<i class="flaticon-profile"></i>
-								<a href="Login.html">Sign</a> In or <a href="RegistrationForm/regForm.html">Create Account</a>
+								<a href="Login.html">Sign</a> In or <a href="RegistrationForm/regForm.html">Create
+									Account</a>
 							</div>
 							<div class="up-item">
 								<div class="shopping-card">
@@ -80,8 +84,8 @@
 					<li><a href="./Mujer.html">Mujer</a></li>
 					<li><a href="./accesorios.html">Accesorios</a></li>
 					<li><a href="./Tecnologia.html">Tecnologia
-						<span class="new">New</span>
-					</a></li>
+							<span class="new">New</span>
+						</a></li>
 					<!-- <li><a href="#">Shoes</a>
 						<ul class="sub-menu">
 							<li><a href="#">Sneakers</a></li>
@@ -118,6 +122,9 @@
 	</div>
 	<!-- Page info end -->
 
+	<!-- Lista de productos -->
+	<ul id="lista-productos"></ul>
+	<div id="enlaces-generados" style="margin-top:20px; font-weight:bold;"></div>
 
 	<!-- Category section -->
 	<section class="category-section spad">
@@ -129,48 +136,118 @@
 						<ul class="category-menu">
 							<li><a href="#">Moda Casual</a>
 								<ul class="sub-menu">
-									<li><a href="#">Crop Top Large<span>(2)</span></a></li>
-									<li><a href="#">Chaqueta Crop<span>(56)</span></a></li>
-									<li><a href="#">Crop Top Slim<span>(36)</span></a></li>
-									<li><a href="#">Little Black Dresses <span>(27)</span></a></li>
-									<li><a href="#">Mini Dresses<span>(19)</span></a></li>
+									<li><a href="#producto-16">Crop Top Large<span>(2)</span></a></li>
+									<li><a href="#producto-7">Chaqueta Crop<span>(56)</span></a></li>
+									<li><a href="#producto-14">Crop Top Slim<span>(36)</span></a></li>
+									<li><a href="#producto-5">Ultra slim <span>(27)</span></a></li>
+									<li><a href="#producto-6">Running Past<span>(19)</span></a></li>
 								</ul>
 							</li>
 							<li><a href="#">Moda Urbana</a>
 								<ul class="sub-menu">
-									<li><a href="#">Chaqueta Casual Deportiva<span>(2)</span></a></li>
-									<li><a href="#">Chaqueta Casual<span>(56)</span></a></li>
-									<li><a href="#">Chaqueta Auto rolled<span>(36)</span></a></li>
-								</ul></li>
+									<li><a href="#producto-18">Chaqueta Casual Deportiva<span>(2)</span></a></li>
+									<li><a href="#producto-10">Chaqueta Casual<span>(56)</span></a></li>
+									<li><a href="#producto-12">Chaqueta Auto rolled<span>(36)</span></a></li>
+									<li><a href="#producto-4">Running Neon<span>(19)</span></a></li>
+								</ul>
+							</li>
 							<li><a href="#">Stilo biker</a>
 								<ul class="sub-menu">
-									<li><a href="#">Chqt Biker Dama Reflect<span>(2)</span></a></li>
-									<li><a href="#">Chqt Biker Impact<span>(56)</span></a></li>
-									<li><a href="#">Chqt Biker Neon<span>(36)</span></a></li>
-								</ul></li>
+									<li><a href="#producto-19">Chqt Biker Dama Reflect<span>(2)</span></a></li>
+									<li><a href="#producto-11">Chqt Biker Impact<span>(56)</span></a></li>
+									<li><a href="#producto-17">Chqt Biker Neon<span>(36)</span></a></li>
+								</ul>
+							</li>
 							<li><a href="#">Bolsos</a></li>
 							<li><a href="#">Gafas</a></li>
 							<li><a href="#">Calzado</a></li>
 						</ul>
 					</div>
+					<h4 class="fw-title">Descripcion</h4>
+					<div id="accordion" class="accordion-area">
+						<div class="panel">
+							<div class="panel-header" id="headingOne">
+								<button class="panel-link active" data-toggle="collapse" data-target="#collapse1"
+									aria-expanded="true" aria-controls="collapse1">informacion</button>
+							</div>
+							<div id="collapse1" class="collapse show" aria-labelledby="headingOne"
+								data-parent="#accordion">
+								<div class="panel-body">
+									<p>Eleva tu look deportivo con nuestra chaqueta liviana, Su diseño aerodinámico y
+										corte impecable se adaptan a tu cuerpo, brindándote libertad de movimiento y una
+										estética moderna que destaca tanto en la ciudad como en la ruta.</p>
+									<p>Gracias a sus terminados premium y cremalleras de alto desempeño, esta prenda no
+										solo es funcional, sino que también proyecta una imagen pulida y sofisticada.
+										Ideal para ciclismo, running o actividades al aire libre, es ligera, resistente
+										al viento y de secado rápido, convirtiéndola en una opción infaltable para
+										quienes buscan rendimiento sin renunciar al estilo.</p>
+									<p>Versátil, duradera y visualmente impactante. Esta chaqueta es la aliada perfecta
+										para quienes viven en movimiento.</p>
+									<p>Peso Aproximado 400Gs</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-header" id="headingTwo">
+								<button class="panel-link" data-toggle="collapse" data-target="#collapse2"
+									aria-expanded="false" aria-controls="collapse2">Medios de Pago </button>
+							</div>
+							<div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="panel-body">
+									<img src="./img/cards.png" alt="">
+									<p>Aceptamos todos los medios de pago electronicos, datafono y trasnferencias
+										bancarias</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-header" id="headingThree">
+								<button class="panel-link" data-toggle="collapse" data-target="#collapse3"
+									aria-expanded="false" aria-controls="collapse3">Envio y Devoluciones</button>
+							</div>
+							<div id="collapse3" class="collapse" aria-labelledby="headingThree"
+								data-parent="#accordion">
+								<div class="panel-body">
+									<h4>10 Dias para Devoluciones</h4>
+									<p>Aceptamos Pago contra entrega<br>Entrega a Domicilio <span>3 - 4 days</span></p>
+									<p>Si no recibes el artícilo tienes 21 días a partir de la fecha de compra para
+										solicitar el reembolso del dinero. <br>
+										* El producto debe estar nuevo, sin uso, con etiquetas y su caja original.
+										Preferentemente en una bolsa negra donde el producto no sea visible y sellada.
+										<br>
+										* El producto no debe tener manchas, olores, ni estar roto o dañado. <br>
+										*Si cumples estos requisitos, es muy fácil iniciar tu devolución, ten en cuenta
+										los siguientes puntos:
+										En el detalle de la compra que realizaste tienes que seleccionar las siguientes
+										opciones: <br>
+										1. “Necesito ayuda”. <br>
+										2. “Quiero devolver el producto?” <br>
+										3. "Es lo que compré pero no me sirve" <br>
+										4. Finalmente selecciona la opción acorde a tu caso para poder iniciar el
+										proceso de devolución.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="filter-widget mb-0">
 						<h2 class="fw-title">Filtra por</h2>
 						<div class="price-range-wrap">
 							<h4>Precio</h4>
-                            <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="35.000" data-max="170.000">
-								<div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
-								<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
-								</span>
-								<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;">
-								</span>
-							</div>
+
+							<div id="slider-range"></div>
+
+							<div id="slider-range"></div>
+
+							<!-- Campos para mostrar valores actuales del rango -->
 							<div class="range-slider">
-                                <div class="price-input">
-                                    <input type="text" id="minamount">
-                                    <input type="text" id="maxamount">
-                                </div>
-                            </div>
-                        </div>
+								<div class="price-input">
+									<input type="text" id="minamount" readonly>
+									<input type="text" id="maxamount" readonly>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="filter-widget mb-0">
 						<h2 class="fw-title">colores disponibles</h2>
@@ -182,14 +259,20 @@
 								</label>
 							</div>
 							<div class="cs-item">
+								<input type="radio" name="cs" id="rosa-color">
+								<label class="cs-rosa" for="rosa-color">
+									<span>(3)</span>
+								</label>
+							</div>
+							<div class="cs-item">
 								<input type="radio" name="cs" id="black-color">
 								<label class="cs-black" for="black-color">
 									<span>(25)</span>
 								</label>
 							</div>
 							<div class="cs-item">
-								<input type="radio" name="cs" id="yollow-color">
-								<label class="cs-yollow" for="yollow-color">
+								<input type="radio" name="cs" id="blue-color">
+								<label class="cs-blue" for="blue-color">
 									<span>(12)</span>
 								</label>
 							</div>
@@ -211,17 +294,24 @@
 									<span>(4)</span>
 								</label>
 							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="all-color" checked="">
+								<label  class="cs-all" for="all-color">
+									<span>Todos</span>
+								</label>
+							</div>
+							
 						</div>
 					</div>
 					<div class="filter-widget mb-0">
 						<h2 class="fw-title">Talla</h2>
 						<div class="fw-size-choose">
-								<div class="sc-item">
+							<div class="sc-item">
 								<input type="radio" name="sc" id="s-size">
 								<label for="s-size">S</label>
 							</div>
 							<div class="sc-item">
-								<input type="radio" name="sc" id="m-size"  checked="">
+								<input type="radio" name="sc" id="m-size" checked="">
 								<label for="m-size">M</label>
 							</div>
 							<div class="sc-item">
@@ -237,9 +327,10 @@
 					<div class="quantity">
 						<p>Cantidad</p>
 						<div class="pro-qty">
-						<input type="text" value="1">
+							<input type="text" value="1">
 						</div>
 					</div>
+
 					<div class="filter-widget">
 						<h2 class="fw-title">Marca</h2>
 						<ul class="category-menu">
@@ -251,7 +342,7 @@
 						</ul>
 					</div>
 				</div>
-			
+
 
 
 
@@ -260,277 +351,295 @@
 
 				<div class="col-lg-9  order-1 order-lg-2 mb-5 mb-lg-0">
 					<div class="row">
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="black">
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-sale">NEW</div>
 									<img src="./img/product/Mujer/18.png" alt="">
 									<div class="pi-links">
-										
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD A TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i><span>+</span></a>
 									</div>
 								</div>
-								<div class="pi-text">
-									<h6>$35,000</h6>
+								<div class="pi-text" data-precio="$35000" >
+									<h6>35,000</h6>
 									<p>Chaqueta Casual Deportiva </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/19.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i><span>+</span></a>
 									</div>
 								</div>
-								<div class="pi-text">
-									<h6>$40,000</h6>
+								<div class="pi-text" data-precio="$40000" >
+									<h6>40,000</h6>
 									<p>Chaqueta Biker Dama Reflect</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6" id="ctl">
+						<div class="col-lg-4 col-sm-6" id="ctl" data-color="gray">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/16.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
-									<h6>$30,000</h6>
+								<div class="pi-text" data-precio="30000" >
+									<h6>30,000</h6>
 									<p>Crop Top large </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="black">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/14.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
-									<h6>$25,000</h6>
+								<div class="pi-text" data-precio="25000" >
+									<h6>25,000</h6>
 									<p>Crop Top slim</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="neon">
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-sale">NEW</div>
 									<img src="./img/product/Mujer/12.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="45000" >
 									<h6>$45,000</h6>
 									<p>Chaqueta auto roled</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/10.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
 									<p>Chaqueta Casual </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="purple">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/11.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="45000" >
 									<h6>$45,000</h6>
 									<p>Chaqueta biker Impact</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="green">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/8.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,00</h6>
 									<p>Chaqueta Runner</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/7.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,00</h6>
 									<p>Chaqueta Crop </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-new">new</div>
 									<img src="./img/product/Mujer/9.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
 									<p>Chaqueta Biker Clasic</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/13.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="40000" >
 									<h6>$40,000</h6>
 									<p>chaqueta biker Capota </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="neon">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/17.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
-									<p>chaqueta biker neon  </p>
+									<p>chaqueta biker neon </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/1.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
 									<p>chaqueta Urban DC </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/2.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
-									<p>chaqueta Running Air  </p>
+									<p>chaqueta Running Air </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="black">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/3.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
-									<p>chaqueta fit  </p>
+									<p>chaqueta fit </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="purple">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/4.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
-									<p>chaqueta runing neon  </p>
+									<p>chaqueta runing neon </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="gray">
 							<div class="product-item">
 								<div class="pi-pic">
+									<div class="tag-sale">NEW</div>
 									<img src="./img/product/Mujer/5.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="28000" >
 									<h6>$28,000</h6>
-									<p>chaqueta ultra slim  </p>
+									<p>chaqueta ultra slim </p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6">
+						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
 									<img src="./img/product/Mujer/6.png" alt="">
 									<div class="pi-links">
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
+												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text">
+								<div class="pi-text" data-precio="35000" >
 									<h6>$35,000</h6>
-									<p>chaqueta runing past  </p>
+									<p>chaqueta runing past </p>
 								</div>
 							</div>
 						</div>
@@ -540,7 +649,7 @@
 						</div>
 
 					</div>
-					
+
 				</div>
 
 
@@ -561,9 +670,12 @@
 				<div class="col-lg-3 col-sm-6">
 					<div class="footer-widget about-widget">
 						<h2>About</h2>
-						<p> En Trivent Ofrecemos una experiencia exclusiva donde la innovación tecnológica y el diseño de autor convergen en un solo lugar. 
-						Para quienes valoran la excelencia, ofrecemos dispositivos de alto rendimiento y prendas de vestir con una estética impecable, seleccionados para acompañar un estilo de vida sofisticado y exigente. 
-							</p>
+						<p> En Trivent Ofrecemos una experiencia exclusiva donde la innovación tecnológica y el diseño
+							de autor convergen en un solo lugar.
+							Para quienes valoran la excelencia, ofrecemos dispositivos de alto rendimiento y prendas de
+							vestir con una estética impecable, seleccionados para acompañar un estilo de vida
+							sofisticado y exigente.
+						</p>
 						<img src="img/cards.png" alt="">
 					</div>
 				</div>
@@ -645,9 +757,13 @@
 					<a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
 				</div>
 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
-<p class="text-white text-center mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Trivent Company <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.Trivent.com" target="_blank">ANB Studio WEB</a></p>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p class="text-white text-center mt-5">Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved | Trivent Company <i
+						class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.Trivent.com"
+						target="_blank">ANB Studio WEB</a>
+				</p>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
 			</div>
 		</div>
@@ -659,6 +775,7 @@
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
@@ -710,5 +827,6 @@
 		});
 	</script>
 
-	</body>
+</body>
+
 </html>
