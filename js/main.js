@@ -226,6 +226,7 @@ $(window).on('load', function () {
 			Cart
 		--------------------- */
 	document.addEventListener("DOMContentLoaded", function () {
+
 		const btnAgregar = document.getElementById("add-card");
 
 		btnAgregar.addEventListener("click", function () {
@@ -264,16 +265,16 @@ $(window).on('load', function () {
 	$(function () {
 		$("#slider-range").slider({
 			range: true,
-			min: 25000,
+			min: 20000,
 			max: 170000,
-			values: [25000, 170000],
+			values: [20000, 170000],
 			slide: function (event, ui) {
 				$("#minamount").val("$" + ui.values[0]);
 				$("#maxamount").val("$" + ui.values[1]);
 
 				// Mostrar/ocultar productos según el precio
 				$(".product-item").each(function () {
-					var precio = parseInt($(this).find(".pi-text").data("precio"));
+					var precio = parseInt($(this).find(".pi-text").data("price"));
 					if (precio >= ui.values[0] && precio <= ui.values[1]) {
 						$(this).closest(".col-lg-4, .col-sm-6").show();
 					} else {
@@ -421,7 +422,50 @@ $(window).on('load', function () {
 	});
 
 
+	/*-------------------
+		Redirigir a la pagina productos	
+		------------------*/
 
+	document.addEventListener("DOMContentLoaded", function () {
+		const products = document.querySelectorAll(".product-item img.product-link");
+
+		products.forEach(function (img) {
+			img.addEventListener("click", function () {
+				const src = img.getAttribute("src");
+				const imgName = src.split("/").pop().split(".")[0];
+				const basePath = src.substring(0, src.lastIndexOf("/"));
+
+				const title = img.getAttribute("data-title");
+				const price = img.getAttribute("data-price");
+
+				// Guardar en localStorage
+				const productData = {
+					title: title,
+					price: price,
+					image: `${basePath}/${imgName}.png`
+				};
+
+				localStorage.setItem("product-detail", JSON.stringify(productData));
+
+				window.location.href = `product.html?img=${imgName}&path=${basePath}`;
+			});
+		});
+	});
+
+	/*-------------------
+		tomar valor de Titulo y precio de manera dinamica	
+		------------------*/
+	$(document).ready(function () {
+		$('.product-item').each(function () {
+			// Obtener el texto de <h6> y <p>
+			var priceText = $(this).find('.pi-text h6').text().trim();
+			var titleText = $(this).find('.pi-text p').text().trim();
+
+			// Asignarlos como atributos al <img>
+			$(this).find('img.product-link').attr('data-price', priceText);
+			$(this).find('img.product-link').attr('data-title', titleText);
+		});
+	});
 
 
 

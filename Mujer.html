@@ -132,6 +132,7 @@
 			<div class="row">
 				<div class="col-lg-3 order-2 order-lg-1">
 					<div class="filter-widget">
+
 						<h2 class="fw-title">Categorias</h2>
 						<ul class="category-menu">
 							<li><a href="#">Moda Casual</a>
@@ -163,6 +164,110 @@
 							<li><a href="#">Calzado</a></li>
 						</ul>
 					</div>
+
+					<div class="filter-widget mb-0">
+						<h2 class="fw-title">Filtra por</h2>
+						<div class="price-range-wrap">
+							<h4>Precio</h4>
+
+							<div id="slider-range"></div>
+
+							<div id="slider-range"></div>
+
+							<!-- Campos para mostrar valores actuales del rango -->
+							<div class="range-slider">
+								<div class="price-input">
+									<input type="text" id="minamount" readonly>
+									<input type="text" id="maxamount" readonly>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-widget mb-0">
+						<h2 class="fw-title">colores disponibles</h2>
+						<div class="fw-color-choose">
+							<div class="cs-item">
+								<input type="radio" name="cs" id="gray-color">
+								<label class="cs-gray" for="gray-color">
+									<span>(3)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="rosa-color">
+								<label class="cs-rosa" for="rosa-color">
+									<span>(3)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="black-color">
+								<label class="cs-black" for="black-color">
+									<span>(25)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="blue-color">
+								<label class="cs-blue" for="blue-color">
+									<span>(12)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="green-color">
+								<label class="cs-green" for="green-color">
+									<span>(18)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="purple-color">
+								<label class="cs-purple" for="purple-color">
+									<span>(9)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="neon-color" checked="">
+								<label class="cs-neon" for="neon-color">
+									<span>(4)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="all-color" checked="">
+								<label class="cs-all" for="all-color">
+									<span>Todos</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="filter-widget mb-0">
+						<p>Elegir:</p>
+						<h2 class="fw-title">Talla</h2>
+						<div class="fw-size-choose">
+							<div class="sc-item">
+								<input type="radio" name="sc" id="s-size">
+								<label for="s-size">S</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="m-size" checked="">
+								<label for="m-size">M</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="l-size">
+								<label for="l-size">L</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="xl-size">
+								<label for="xl-size">XL</label>
+							</div>
+						</div>
+					</div>
+					<div class="quantity">
+						<h6 class="fw-title">Cantidad.  _   .</h6>
+						<div class="pro-qty">
+							<input type="text" value="1">
+						</div>
+					</div>
+					
+					<!-- -------- -->
 					<h4 class="fw-title">Descripcion</h4>
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
@@ -231,105 +336,6 @@
 						</div>
 					</div>
 
-					<div class="filter-widget mb-0">
-						<h2 class="fw-title">Filtra por</h2>
-						<div class="price-range-wrap">
-							<h4>Precio</h4>
-
-							<div id="slider-range"></div>
-
-							<div id="slider-range"></div>
-
-							<!-- Campos para mostrar valores actuales del rango -->
-							<div class="range-slider">
-								<div class="price-input">
-									<input type="text" id="minamount" readonly>
-									<input type="text" id="maxamount" readonly>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="filter-widget mb-0">
-						<h2 class="fw-title">colores disponibles</h2>
-						<div class="fw-color-choose">
-							<div class="cs-item">
-								<input type="radio" name="cs" id="gray-color">
-								<label class="cs-gray" for="gray-color">
-									<span>(3)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="rosa-color">
-								<label class="cs-rosa" for="rosa-color">
-									<span>(3)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="black-color">
-								<label class="cs-black" for="black-color">
-									<span>(25)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="blue-color">
-								<label class="cs-blue" for="blue-color">
-									<span>(12)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="green-color">
-								<label class="cs-green" for="green-color">
-									<span>(18)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="purple-color">
-								<label class="cs-purple" for="purple-color">
-									<span>(9)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="neon-color" checked="">
-								<label class="cs-neon" for="neon-color">
-									<span>(4)</span>
-								</label>
-							</div>
-							<div class="cs-item">
-								<input type="radio" name="cs" id="all-color" checked="">
-								<label  class="cs-all" for="all-color">
-									<span>Todos</span>
-								</label>
-							</div>
-							
-						</div>
-					</div>
-					<div class="filter-widget mb-0">
-						<h2 class="fw-title">Talla</h2>
-						<div class="fw-size-choose">
-							<div class="sc-item">
-								<input type="radio" name="sc" id="s-size">
-								<label for="s-size">S</label>
-							</div>
-							<div class="sc-item">
-								<input type="radio" name="sc" id="m-size" checked="">
-								<label for="m-size">M</label>
-							</div>
-							<div class="sc-item">
-								<input type="radio" name="sc" id="l-size">
-								<label for="l-size">L</label>
-							</div>
-							<div class="sc-item">
-								<input type="radio" name="sc" id="xl-size">
-								<label for="xl-size">XL</label>
-							</div>
-						</div>
-					</div>
-					<div class="quantity">
-						<p>Cantidad</p>
-						<div class="pro-qty">
-							<input type="text" value="1">
-						</div>
-					</div>
 
 					<div class="filter-widget">
 						<h2 class="fw-title">Marca</h2>
@@ -355,31 +361,36 @@
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-sale">NEW</div>
-									<img src="./img/product/Mujer/18.png" alt="">
+									<img src="./img/product/Mujer/18.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 
-										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD A TO CART</span></a>
-										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i><span>+</span></a>
+										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD A TO
+												CART</span></a>
+										<a href="#" class="wishlist-btn"><i
+												class="flaticon-heart"></i><span>+</span></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="$35000" >
-									<h6>35,000</h6>
-									<p>Chaqueta Casual Deportiva </p>
+								<div class="pi-text" data-price="95000">
+									<h6 class="p-price">$35,000</h6>
+									<p class="p-title">Chaqueta Casual Deportiva </p>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/19.png" alt="">
+									<img src="./img/product/Mujer/19.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
-										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i><span>+</span></a>
+										<a href="#" class="wishlist-btn"><i
+												class="flaticon-heart"></i><span>+</span></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="$40000" >
-									<h6>40,000</h6>
+								<div class="pi-text" data-price="$40000">
+									<h6>$40,000</h6>
 									<p>Chaqueta Biker Dama Reflect</p>
 								</div>
 							</div>
@@ -387,15 +398,16 @@
 						<div class="col-lg-4 col-sm-6" id="ctl" data-color="gray">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/16.png" alt="">
+									<img src="./img/product/Mujer/16.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="30000" >
-									<h6>30,000</h6>
+								<div class="pi-text" data-price="30000">
+									<h6>$30,000</h6>
 									<p>Crop Top large </p>
 								</div>
 							</div>
@@ -403,15 +415,16 @@
 						<div class="col-lg-4 col-sm-6" data-color="black">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/14.png" alt="">
+									<img src="./img/product/Mujer/14.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="25000" >
-									<h6>25,000</h6>
+								<div class="pi-text" data-price="25000">
+									<h6>$25,000</h6>
 									<p>Crop Top slim</p>
 								</div>
 							</div>
@@ -420,14 +433,15 @@
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-sale">NEW</div>
-									<img src="./img/product/Mujer/12.png" alt="">
+									<img src="./img/product/Mujer/12.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="45000" >
+								<div class="pi-text" data-price="45000">
 									<h6>$45,000</h6>
 									<p>Chaqueta auto roled</p>
 								</div>
@@ -436,14 +450,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/10.png" alt="">
+									<img src="./img/product/Mujer/10.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>Chaqueta Casual </p>
 								</div>
@@ -452,14 +467,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="purple">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/11.png" alt="">
+									<img src="./img/product/Mujer/11.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="45000" >
+								<div class="pi-text" data-price="45000">
 									<h6>$45,000</h6>
 									<p>Chaqueta biker Impact</p>
 								</div>
@@ -468,14 +484,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="green">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/8.png" alt="">
+									<img src="./img/product/Mujer/8.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,00</h6>
 									<p>Chaqueta Runner</p>
 								</div>
@@ -484,14 +501,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/7.png" alt="">
+									<img src="./img/product/Mujer/7.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,00</h6>
 									<p>Chaqueta Crop </p>
 								</div>
@@ -501,14 +519,15 @@
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-new">new</div>
-									<img src="./img/product/Mujer/9.png" alt="">
+									<img src="./img/product/Mujer/9.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>Chaqueta Biker Clasic</p>
 								</div>
@@ -517,14 +536,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/13.png" alt="">
+									<img src="./img/product/Mujer/13.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="40000" >
+								<div class="pi-text" data-price="40000">
 									<h6>$40,000</h6>
 									<p>chaqueta biker Capota </p>
 								</div>
@@ -533,14 +553,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="neon">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/17.png" alt="">
+									<img src="./img/product/Mujer/17.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>chaqueta biker neon </p>
 								</div>
@@ -549,14 +570,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/1.png" alt="">
+									<img src="./img/product/Mujer/1.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>chaqueta Urban DC </p>
 								</div>
@@ -565,14 +587,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="rosa">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/2.png" alt="">
+									<img src="./img/product/Mujer/2.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>chaqueta Running Air </p>
 								</div>
@@ -581,14 +604,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="black">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/3.png" alt="">
+									<img src="./img/product/Mujer/3.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>chaqueta fit </p>
 								</div>
@@ -597,14 +621,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="purple">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/4.png" alt="">
+									<img src="./img/product/Mujer/4.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>chaqueta runing neon </p>
 								</div>
@@ -614,14 +639,15 @@
 							<div class="product-item">
 								<div class="pi-pic">
 									<div class="tag-sale">NEW</div>
-									<img src="./img/product/Mujer/5.png" alt="">
+									<img src="./img/product/Mujer/5.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="28000" >
+								<div class="pi-text" data-price="28000">
 									<h6>$28,000</h6>
 									<p>chaqueta ultra slim </p>
 								</div>
@@ -630,14 +656,15 @@
 						<div class="col-lg-4 col-sm-6" data-color="blue">
 							<div class="product-item">
 								<div class="pi-pic">
-									<img src="./img/product/Mujer/6.png" alt="">
+									<img src="./img/product/Mujer/6.png" alt="" class="product-link" data-img=""
+										data-title="" data-price="">
 									<div class="pi-links">
 										<a href="#add-card" class="add-card"><i class="flaticon-bag"></i><span>ADD TO
 												CART</span></a>
 										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 									</div>
 								</div>
-								<div class="pi-text" data-precio="35000" >
+								<div class="pi-text" data-price="35000">
 									<h6>$35,000</h6>
 									<p>chaqueta runing past </p>
 								</div>
@@ -826,6 +853,7 @@
 			});
 		});
 	</script>
+
 
 </body>
 
