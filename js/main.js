@@ -466,7 +466,36 @@ $(window).on('load', function () {
 			$(this).find('img.product-link').attr('data-title', titleText);
 		});
 	});
+	/*-------------------
+		Range Slider
+	--------------------- */
+	let itemsToShow = 12; // cantidad de productos visibles al inicio
+	const products = document.querySelectorAll('.product-item');
 
+	function showProducts() {
+		products.forEach((product, index) => {
+			if (index < itemsToShow) {
+				product.style.display = 'block';
+			}
+		});
+
+		// Oculta el botón si ya no hay más por mostrar
+		if (itemsToShow >= products.length) {
+			document.querySelector('.site-btn.sb-line.sb-dark').style.display = 'none';
+		}
+	}
+
+	// Inicial
+	document.addEventListener("DOMContentLoaded", () => {
+		products.forEach(p => p.style.display = 'none'); // Oculta todos
+		showProducts();
+	});
+
+	// Botón Load More
+	document.querySelector('.site-btn.sb-line.sb-dark').addEventListener('click', () => {
+		itemsToShow += 6; // mostrar 6 más
+		showProducts();
+	});
 
 
 })(jQuery);
