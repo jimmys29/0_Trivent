@@ -467,7 +467,7 @@ $(window).on('load', function () {
 		});
 	});
 	/*-------------------
-		Range Slider
+		Mostrar una canntidad de fotos y activar el boton cargar mas
 	--------------------- */
 	let itemsToShow = 12; // cantidad de productos visibles al inicio
 	const products = document.querySelectorAll('.product-item');
@@ -496,6 +496,56 @@ $(window).on('load', function () {
 		itemsToShow += 6; // mostrar 6 más
 		showProducts();
 	});
+	/*-------------------
+			Usar el buscador de la pagina respecto a cualquier parametro de articulos
+		--------------------- */
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const input = document.getElementById("search-input");
+		const form = document.getElementById("search-form");
+
+		function normalizarTexto(texto) {
+			return texto.toLowerCase()
+				.normalize("NFD")                      // Elimina acentos
+				.replace(/[\u0300-\u036f]/g, "")       // Más eliminación de acentos
+				.replace(/\$|,/g, "")                  // Elimina $ y comas
+				.trim();                               // Elimina espacios
+		}
+
+		function filtrarProductos() {
+			const searchTerm = normalizarTexto(input.value);
+			const palabras = searchTerm.split(/\s+/); // Divide en palabras
+
+			const products = document.querySelectorAll('.col-lg-4.col-sm-6');
+
+			products.forEach(product => {
+				const title = normalizarTexto(product.querySelector('.p-title')?.textContent || '');
+				const piText = normalizarTexto(product.querySelector('.pi-text')?.textContent || '');
+				const color = normalizarTexto(product.getAttribute("data-color") || '');
+				const category = normalizarTexto(product.querySelector('.pi-links')?.getAttribute("data-category") || '');
+				const priceVisible = normalizarTexto(product.querySelector('.p-price')?.textContent || '');
+				const priceData = normalizarTexto(product.querySelector('.pi-text')?.getAttribute("data-price") || '');
+
+				const combinado = `${title} ${piText} ${color} ${category} ${priceVisible} ${priceData}`;
+
+				// Mostrar solo si TODAS las palabras están incluidas
+				const coincide = palabras.every(palabra => combinado.includes(palabra));
+
+				product.style.display = coincide ? "" : "none";
+			});
+		}
+
+		// Buscar mientras se escribe
+		input.addEventListener("input", filtrarProductos);
+
+		// Evita enviar formulario
+		form.addEventListener("submit", function (e) {
+			e.preventDefault();
+			filtrarProductos();
+		});
+	});
+
+
 
 
 })(jQuery);
